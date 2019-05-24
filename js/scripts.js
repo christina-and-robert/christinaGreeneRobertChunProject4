@@ -91,7 +91,7 @@ $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto,
    });
 
 slotApp.randomGenerator = function (slotArray) {
-    return Math.floor(Math.random() * slotArray[0].businesses.length);
+    return Math.floor(Math.random() * slotArray.length);
 }
 
 slotApp.init = function () {
@@ -133,7 +133,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
             if (slotApp.koreanToronto[0].businesses[i].price === '$') {
                slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
 
@@ -145,7 +145,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
             if (slotApp.koreanMississauga[0].businesses[i].price === '$') {
                slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
 
@@ -157,7 +157,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
             if (slotApp.mexicanToronto[0].businesses[i].price === '$$') {
                slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
 
@@ -169,7 +169,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
             if (slotApp.mexicanMississauga[0].businesses[i].price === '$$') {
                slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
 
@@ -181,7 +181,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
             if (slotApp.koreanToronto[0].businesses[i].price === '$$') {
                slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
 
@@ -193,7 +193,7 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
             if (slotApp.koreanMississauga[0].businesses[i].price === '$$') {
                slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
-               console.log(i);
+               // console.log(i);
             }
          }
       }
