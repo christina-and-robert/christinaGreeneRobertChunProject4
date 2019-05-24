@@ -1,18 +1,23 @@
+// object for namespacing
 slotApp = {};
 
-// aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_ - XlybnXHYx
+// Robert's API Key aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_ - XlybnXHYx
 
-// GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx
+// Christina's API Key GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx
 
+// saving URL snippits that match our search results for each API call
 slotApp.koreanTorontoURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Toronto&categories=korean&limit=50';
 slotApp.koreanMississauagaURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Mississauga&categories=korean&limit=50';
 slotApp.mexicanTorontoURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Toronto&categories=mexican&limit=50';
 slotApp.mexicanMississaugaURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Mississauga&categories=mexican&limit=50';
 
+// declaring variables
 slotApp.koreanToronto;
 slotApp.koreanMississauga;
 slotApp.mexicanToronto;
 slotApp.mexicanMississauga;
+
+// declaring arrays
 slotApp.modArray = [];
 slotApp.currentSelection = [];
 
@@ -80,6 +85,7 @@ slotApp.mexicanMississauga = $.ajax({
    }
 });
 
+// Setting up parameters for if the promise is fulfilled or not
 $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto, slotApp.mexicanMississauga)
    .then((resultOfKoreanToronto, resultOfKoreanMississauga, resultOfMexicanToronto, resultOfMexicanMississauga) => {
       slotApp.koreanToronto = resultOfKoreanToronto;
@@ -88,26 +94,32 @@ $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto,
       slotApp.mexicanMississauga = resultOfMexicanMississauga;
    })
    .fail((err1, err2, err3, err4) => {
-      console.log(err1, err2, err3, err4);
+      alert('Please refresh the page to try again.');
    });
 
+// a math function to randomly select a value in slotArray
 slotApp.randomGenerator = function (slotArray) {
     return Math.floor(Math.random() * slotArray.length);
 }
 
+// functions we want to happen when .init is called (when the doc is ready)
 slotApp.init = function () {
+   // instructions for what is to happen once the form is submitted
    $('form').on('submit', function (e) {
+      // prevents default function of button when clicked
       e.preventDefault();
 
+      // collecting values from user input
       const userInputPrice = $(`input[name=price]:checked`).val();
       const userInputCuisine = $(`input[name=cuisine]:checked`).val();
       const userInputCity = $(`input[name=city]:checked`).val();
 
+      // setting randomNumber to 0
       let randomNumber = 0;
       // clears selection for next click
       slotApp.modArray.length = 0;
 
-
+      /////If statements for each type of search////////////
       //cheap mexican Toronto
       if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "1") {
 
@@ -173,17 +185,14 @@ slotApp.init = function () {
             }
          }
       }
+
       // runs the randomGenerator function to find a random number in the modArray
       randomNumber = slotApp.randomGenerator(slotApp.modArray);
-
-      console.log(randomNumber);
 
       // defining currentSelection to include the 1 random number that returns
       slotApp.currentSelection = slotApp.modArray[randomNumber];
 
-      console.log(slotApp.currentSelection);
-
-
+      // adding results section to the html page dynamically
       $('.results').html(`<div>
          <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
          </div>
@@ -194,13 +203,10 @@ slotApp.init = function () {
          <p id="locationInformation">${slotApp.currentSelection.location.address1}</p>
          <p id="rating">${slotApp.currentSelection.rating}</p>
          </article>`);
-
    })
 }
 
-
-
+// all of the functions that will run when the document is ready
 $(function () {
    slotApp.init();
-    //    console.log(slotApp.randomGenerator());
 });
