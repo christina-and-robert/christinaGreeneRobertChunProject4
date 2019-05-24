@@ -178,4 +178,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+main {
+  background: url(../assets/veggieBackground.png) top left/50% repeat;
+}
+
+header {
+  background: #02485D;
+}
 /*# sourceMappingURL=style.css.map */
