@@ -14,6 +14,7 @@ slotApp.koreanMississauga;
 slotApp.mexicanToronto;
 slotApp.mexicanMississauga;
 slotApp.modArray = [];
+slotApp.currentSelection = [];
 
 // AJAX call for Korean Restaurants in Toronto
 slotApp.koreanToronto = $.ajax({
@@ -103,7 +104,9 @@ slotApp.init = function () {
       const userInputCity = $(`input[name=city]:checked`).val();
 
       let randomNumber = 0;
-      modArray = [];
+      // clears selection for next click
+      slotApp.modArray.length = 0;
+
 
       //cheap mexican Toronto
       if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "1") {
@@ -170,20 +173,27 @@ slotApp.init = function () {
             }
          }
       }
+      // runs the randomGenerator function to find a random number in the modArray
       randomNumber = slotApp.randomGenerator(slotApp.modArray);
+
       console.log(randomNumber);
 
-      console.log(slotApp.modArray[randomNumber]);
-
+      // defining currentSelection to include the 1 random number that returns
       slotApp.currentSelection = slotApp.modArray[randomNumber];
 
       console.log(slotApp.currentSelection);
 
 
-      // clears selection for next click
-      slotApp.modArray.length = 0;
-
-      
+      $('.results').html(`<div>
+         <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
+         </div>
+         <aside id="imageContainer">
+         <img src="${slotApp.currentSelection.image_url}" id="restaurantImage" alt="">
+         </aside>
+         <article>
+         <p id="locationInformation">${slotApp.currentSelection.location.address1}</p>
+         <p id="rating">${slotApp.currentSelection.rating}</p>
+         </article>`);
 
    })
 }
