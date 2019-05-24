@@ -1,5 +1,9 @@
 slotApp = {};
 
+// aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_ - XlybnXHYx
+
+// GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx
+
 slotApp.koreanTorontoURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Toronto&categories=korean&limit=50';
 slotApp.koreanMississauagaURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Mississauga&categories=korean&limit=50';
 slotApp.mexicanTorontoURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=Toronto&categories=mexican&limit=50';
@@ -17,7 +21,7 @@ slotApp.koreanToronto = $.ajax({
    url: slotApp.koreanTorontoURL,
    method: "GET",
    headers: {
-      Authorization: "Bearer GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx",
+       Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
       UserAgent: "PostmanRuntime/7.13.0",
       Accept: "*/*",
       CacheControl: "no-cache",
@@ -33,7 +37,7 @@ slotApp.koreanMississauga = $.ajax({
    url: slotApp.koreanMississauagaURL,
    method: "GET",
    headers: {
-      Authorization: "Bearer GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx",
+       Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
       UserAgent: "PostmanRuntime/7.13.0",
       Accept: "*/*",
       CacheControl: "no-cache",
@@ -49,7 +53,7 @@ slotApp.mexicanToronto = $.ajax({
    url: slotApp.mexicanTorontoURL,
    method: "GET",
    headers: {
-      Authorization: "Bearer GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx",
+       Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
       UserAgent: "PostmanRuntime/7.13.0",
       Accept: "*/*",
       CacheControl: "no-cache",
@@ -65,7 +69,7 @@ slotApp.mexicanMississauga = $.ajax({
    url: slotApp.mexicanMississaugaURL,
    method: "GET",
    headers: {
-      Authorization: "Bearer GAMYzGkShejSRIXgbB988do_OXKkIjVLpZ4Zeb9VgPrRdZBGCY44fbsYsjzoh4IWsX1O8KLwLfbWu6o4BYy29jZp3nXs1SaUNhxHA2hCBWbJ6fJR0qhcjZ2ok27kXHYx",
+       Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
       UserAgent: "PostmanRuntime/7.13.0",
       Accept: "*/*",
       CacheControl: "no-cache",
@@ -76,10 +80,13 @@ slotApp.mexicanMississauga = $.ajax({
 
 $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto, slotApp.mexicanMississauga)
    .then((resultOfKoreanToronto, resultOfKoreanMississauga, resultOfMexicanToronto, resultOfMexicanMississauga) => {
-      console.log(resultOfKoreanToronto);
-      console.log(resultOfKoreanMississauga);
-      console.log(resultOfMexicanToronto);
-      console.log(resultOfMexicanMississauga);
+    slotApp.koreanToronto = resultOfKoreanToronto;
+    slotApp.koreanMississauga = resultOfKoreanMississauga;
+    slotApp.mexicanToronto = resultOfMexicanToronto;
+    slotApp.mexicanMississauga = resultOfMexicanMississauga;
+    //   console.log(resultOfKoreanMississauga);
+    //   console.log(resultOfMexicanToronto);
+    //   console.log(resultOfMexicanMississauga);
 
 
    })
@@ -88,12 +95,12 @@ $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto,
    });
 
 slotApp.randomGenerator = function() {
-   return Math.floor(Math.random() * slotApp.koreanToronto.responseJSON.businesses.length;
+//    return Math.floor(Math.random() * slotApp.koreanToronto.responseJSON.businesses.length);
 }
 
 
 slotApp.init = function () {
-   console.log(slotApp.koreanToronto);
+//    console.log(slotApp.koreanToronto);
 }
 
 
@@ -102,5 +109,5 @@ slotApp.init = function () {
 
 $(function () {
    slotApp.init();
-   console.log(slotApp.randomGenerator());
+//    console.log(slotApp.randomGenerator());
 });
