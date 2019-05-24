@@ -111,24 +111,22 @@ slotApp.init = function () {
          for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
             if (slotApp.mexicanToronto[0].businesses[i].price === '$') {
                slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
-               console.log(i);
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.mexicanToronto);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.mexicanToronto);
+         // console.log(randomNumber);
       }
       //cheap mexican mississauga
       if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "2") {
          for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
             if (slotApp.mexicanMississauga[0].businesses[i].price === '$') {
                slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
-               console.log(i);
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.mexicanMississauga);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.mexicanMississauga);
+         // console.log(randomNumber);
       }
       //cheap korean toronto
       if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "1") {
@@ -139,8 +137,8 @@ slotApp.init = function () {
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.koreanToronto);
-         console.log(randomNumber);
+      //    randomNumber = slotApp.randomGenerator(slotApp.koreanToronto);
+      //    console.log(randomNumber);
       }
       //cheap korean mississauga
       if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "2") {
@@ -151,8 +149,8 @@ slotApp.init = function () {
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.koreanMississauga);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.koreanMississauga);
+         // console.log(randomNumber);
       }
       //expensive mexican Toronto
       if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "1") {
@@ -163,8 +161,8 @@ slotApp.init = function () {
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.mexicanToronto);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.modArray);
+         // console.log(randomNumber);
       }
       //expensive mexican mississauga
       if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "2") {
@@ -175,8 +173,8 @@ slotApp.init = function () {
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.mexicanMississauga);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.modArray);
+         // console.log(randomNumber);
       }
       //expensive korean toronto
       if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "1") {
@@ -187,8 +185,8 @@ slotApp.init = function () {
             }
          }
 
-         randomNumber = slotApp.randomGenerator(slotApp.koreanToronto);
-         console.log(randomNumber);
+         // randomNumber = slotApp.randomGenerator(slotApp.modArray);
+         // console.log(randomNumber);
       }
       //expensive korean mississauga
       if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "2") {
@@ -198,12 +196,11 @@ slotApp.init = function () {
                console.log(i);
             }
          }
-
-         randomNumber = slotApp.randomGenerator(slotApp.koreanMississauga);
-         console.log(randomNumber);
       }
+      randomNumber = slotApp.randomGenerator(slotApp.modArray);
+      console.log(randomNumber);
       
-      
+
 
 
    })
