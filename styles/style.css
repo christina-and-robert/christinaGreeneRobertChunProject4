@@ -195,15 +195,6 @@ body {
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-}
-
 header {
   background: #02485D;
 }
@@ -222,7 +213,7 @@ main {
 
 main .searchParameters {
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,6 +253,16 @@ main .searchParameters label {
 
 .results #resultsInformation #imageContainer {
   width: 40%;
+}
+
+.results #resultsInformation img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .results #resultsInformation #locationInfo {
