@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900|Montserrat&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" href=""> REMEMBER TO PUT FAVICON -->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900|Montserrat|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <h1>FOOD TIME</h1>
@@ -17,31 +19,64 @@
         <form class="wrapper">
             <div class="searchParameters">
                 <div class="cost">
-                    <label for="cheap">$</label>
-                    <input type="radio" id="cheap" name="price" value="1" required>
-                    <label for="expensive">$$</label>
-                    <input type="radio" id="expensive" name="price" value="2" required>
+                    <div>
+                        <input type="radio" id="cheap" name="price" value="1" required >
+                        <label for="cheap" tabindex="0">
+                            <img src="./assets/singleDollarSign.png" alt="I'm sad" />
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="expensive" name="price" value="2" required>
+                        <label for="expensive"> 
+                            <img src="./assets/doubleDollarSign.png" alt="I'm sad" />
+                        </label>
+                    </div>
+
                 </div>
 
                 <div class="foodType">
-                    <label for="mexican">Mexican</label>
-                    <input type="radio" id="mexican" name="cuisine" value="1" required>
-                    <label for="korean">Korean</label>
-                    <input type="radio" id="korean" name="cuisine" value="2" required>
+                    <div>
+                        <input type="radio" id="mexican" name="cuisine" value="1" required>
+                        <label for="mexican">MEXICAN
+                            <!-- <div>
+
+                                <p>MEXICAN</p>
+                            </div> -->
+                            <!-- <img src="./assets/mexicanSign.png" alt="I'm sad" /> -->
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="korean" name="cuisine" value="2" required>
+                        <label for="korean">KOREAN
+                            <!-- <div>
+                                <p>KOREAN</p>
+                            </div> -->
+                            
+                            <!-- <img src="./assets/koreanSign.png" alt="I'm sad" /> -->
+                        </label>
+                    </div>
                 </div>
                 <div class="location">
-                    <label for="toronto">Toronto</label>
-                    <input type="radio" id="toronto" name="city" value="1" required>
-                    <label for="mississauga">Mississauga</label>
-                    <input type="radio" id="mississauga" name="city" value="2" required>
+                    <div class = >
+                        <input type="radio" id="toronto" name="city" value="1" required>
+                        <label for="toronto">
+                            <img src="./assets/torontoIcon.png" alt="I'm sad" />
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mississauga" name="city" value="2" required>
+                        <label for="mississauga">
+                            <img src="./assets/mississaugaIcon.png" alt="I'm sad" />
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="wrapper">
                 <div class="instructions">
-                    <p>Click below to find a restaurant!</p>
+                    <!-- <p>Click below to find a restaurant!</p> -->
                 </div>
                 <div class="resultsButtonContainer">
-                    <button class="resultsButton">Click here</button>
+                    <button class="resultsButton">!Find Me Some Food!</button>
                 </div>
             </div>
         </form>
@@ -51,7 +86,9 @@
         </section>
     </main>
 
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

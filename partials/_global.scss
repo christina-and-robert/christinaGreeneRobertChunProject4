@@ -5,24 +5,32 @@ $accentColorPeach: #F7A278;
 $primaryBackgroundColor: #044E65;
 
 
-$headingFont: 'Londrina Solid', cursive;
-$bodyFont: 'Montserrat', sans-serif;
+$headingFont: 'Londrina Solid',
+cursive;
+$bodyFont: 'Montserrat',
+sans-serif;
+$cityFont: 'Sedgwick Ave Display',
+cursive;
 
 html {
-   font-size: 62.5%;
-   scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-   font-size: 2rem;
-   text-align: center;
-   font-family: $bodyFont;
+    font-size: 2rem;
+    text-align: center;
+    font-family: $bodyFont;
 }
 
 .wrapper {
-   max-width: 1024px;
-   margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-
-
+.resultsButton {
+    font-size: 5rem;
+    text-align: center;
+    color: $accentColorYellow;
+    font-family: $headingFont;
+}

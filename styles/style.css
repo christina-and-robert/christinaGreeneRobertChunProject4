@@ -195,6 +195,13 @@ body {
   margin: 0 auto;
 }
 
+.resultsButton {
+  font-size: 5rem;
+  text-align: center;
+  color: #FCD567;
+  font-family: "Londrina Solid", cursive;
+}
+
 header {
   background: #02485D;
 }
@@ -230,6 +237,12 @@ main .searchParameters .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -239,6 +252,39 @@ main .searchParameters .location {
 
 main .searchParameters label {
   padding: 20px 0;
+}
+
+main .foodType div {
+  width: 100%;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+
+main .cost div {
+  width: 50%;
+}
+
+main .location div {
+  width: 35%;
+}
+
+main .foodType img,
+main .cost img,
+main .location img {
+  width: 100%;
+}
+
+main input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+main input[type=radio]:checked + label > img,
+main .foodType input[type=radio]:checked + label {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 3px 10px #49F1BD;
+          box-shadow: 0 0 3px 10px #49F1BD;
 }
 
 .results #resultsInformation {

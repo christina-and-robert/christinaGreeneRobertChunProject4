@@ -1,23 +1,60 @@
 main {
-   background: url(../assets/veggieBackground.png) top left/50% repeat;
-   .searchParameters {
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 20px;
-      display: flex;
-      flex-direction: row;
-      padding: 50px 0;
-      .cost,
-      .foodType,
-      .location {
-         display: flex;
-         flex-direction: column;
-         width: 33.33%;
-      }
-      label {
-         padding: 20px 0;
-      }
-   }
+    background: url(../assets/veggieBackground.png) top left/50% repeat;
+
+    .searchParameters {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0;
+
+        .cost,
+        .foodType,
+        .location {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 33.33%;
+        }
+
+        label {
+            padding: 20px 0;
+        }
+    }
+
+    .foodType div {
+        width: 100%;
+        font-family: $cityFont;
+        font-size:5rem;
+        text-align:center;
+    }
+
+    .cost div {
+        width: 50%;
+    }
+
+    .location div {
+        width: 35%;
+    }
+
+    .foodType img,
+    .cost img,
+    .location img {
+        width: 100%;
+    }
+
+    input[type=radio] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    input[type=radio]:checked+label>img,
+    .foodType input[type=radio]:checked+label {
+        border: 1px solid #fff;
+        box-shadow: 0 0 3px 10px $accentColorAqua;
+
+    }
+
+
 }
-
-
-
