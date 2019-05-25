@@ -191,7 +191,7 @@ body {
 }
 
 .wrapper {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -280,9 +280,9 @@ main .searchParameters input[type=radio] {
 
 main .searchParameters input[type=radio]:checked + label > img,
 main .searchParameters .foodType input[type=radio]:checked + label {
-  border: 1px solid #fff;
-  -webkit-box-shadow: 0 0 3px 10px #49F1BD;
-          box-shadow: 0 0 3px 10px #49F1BD;
+  border: 1px solid #F7A278;
+  -webkit-box-shadow: 0 0 3px 8px #F7A278;
+          box-shadow: 0 0 3px 8px #F7A278;
 }
 
 main .resultsButtonContainer {
@@ -290,29 +290,24 @@ main .resultsButtonContainer {
 }
 
 main .resultsButtonContainer .resultsButton {
+  font-family: "Londrina Solid", cursive;
+  color: #032D35;
   font-size: 5rem;
   text-align: center;
   background: #F7A278;
-  border-radius: 10px;
-  color: #032D35;
-  font-family: "Londrina Solid", cursive;
-  padding: 10px 20px;
   border: 0.16em solid #FCD567;
-}
-
-button {
+  border-radius: 10px;
+  padding: 10px 20px;
   position: relative;
-  background-color: #F7A278;
 }
 
-button::before,
-button::after {
+main .resultsButtonContainer .resultsButton::before, main .resultsButtonContainer .resultsButton::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   height: 4px;
-  background-color: #3cefff;
+  background-color: #49F1BD;
   -webkit-transform-origin: center right;
           transform-origin: center right;
   -webkit-transform: scaleX(0);
@@ -323,16 +318,15 @@ button::after {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-button::before {
+main .resultsButtonContainer .resultsButton::before {
   top: 0;
 }
 
-button::after {
+main .resultsButtonContainer .resultsButton::after {
   bottom: 0;
 }
 
-button:hover::before,
-button:hover::after {
+main .resultsButtonContainer .resultsButton:hover::before, main .resultsButtonContainer .resultsButton:hover::after {
   -webkit-transform-origin: center left;
           transform-origin: center left;
   -webkit-transform: scaleX(1);
@@ -340,7 +334,7 @@ button:hover::after {
 }
 
 .results {
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 .results .resultsInformation {
@@ -386,7 +380,7 @@ button:hover::after {
           justify-content: center;
 }
 
-.results .resultsInformation article h2 {
+.results .resultsInformation h2 {
   font-family: "Londrina Solid", cursive;
   font-size: 5rem;
   margin: 0;
@@ -394,23 +388,24 @@ button:hover::after {
   padding-bottom: 5px;
 }
 
-.results .resultsInformation article .locationInfo {
+.results .resultsInformation .locationInfo {
   border-bottom: 3px dashed #F7A278;
   padding: 10px 0;
 }
 
-.results .resultsInformation article .rating {
+.results .resultsInformation .rating {
   padding-top: 5px;
 }
 
-.results .resultsInformation article p {
+.results .resultsInformation p {
   font-size: 3rem;
   margin: 0;
 }
 
 footer {
   background: #032D35;
-  color: white;
+  color: #FCD567;
   font-family: "Montserrat", sans-serif;
+  padding: 5px 0;
 }
 /*# sourceMappingURL=style.css.map */
