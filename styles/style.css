@@ -474,4 +474,10 @@ footer {
     height: 75vh;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1200px) and (orientation: landscape) {
+  header {
+    height: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

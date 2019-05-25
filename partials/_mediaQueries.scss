@@ -1,79 +1,88 @@
 @media (max-width: 1000px) {
-   .wrapper {
-      width: 80%;
-   }
+    .wrapper {
+        width: 80%;
+    }
 }
 
 // Portrait tablet, small desktops (940px), landscape phone to portrait tablet (768px)
 @media (max-width: 768px) {
-   header {
+    header {
 
-      h1 {
-         font-size: 19vw;
-         padding: 25px 0;
-      }
-   }
-   main {
+        h1 {
+            font-size: 19vw;
+            padding: 25px 0;
+        }
+    }
 
-      form {
-         height: 61vh;
-      }
-      
-      .searchParameters {
-         
-         .foodType {
-            padding: 0;
-            font-size: 6.5vw;
-         }
-      }
+    main {
 
-      .resultsButtonContainer {
-         padding-top: 30px;
-         .resultsButton {
-            font-size: 6.5vw;
-         }
-      }
-   }
+        form {
+            height: 61vh;
+        }
 
-   .results {
+        .searchParameters {
 
-      .resultsInformation {
-         flex-direction: column-reverse;
+            .foodType {
+                padding: 0;
+                font-size: 6.5vw;
+            }
+        }
 
-         .imageContainer,
-         article {
-            width: 100%;
-         }
+        .resultsButtonContainer {
+            padding-top: 30px;
 
-         article {
-            padding: 20px 0;
-         }
+            .resultsButton {
+                font-size: 6.5vw;
+            }
+        }
+    }
 
-         h2 {
-            font-size: 6.5vw;
-         }
+    .results {
 
-         p {
-            font-size: 3.9vw;
-         }
-      }
-   }
+        .resultsInformation {
+            flex-direction: column-reverse;
+
+            .imageContainer,
+            article {
+                width: 100%;
+            }
+
+            article {
+                padding: 20px 0;
+            }
+
+            h2 {
+                font-size: 6.5vw;
+            }
+
+            p {
+                font-size: 3.9vw;
+            }
+        }
+    }
 }
 
 // Landscape phones and down (including smallest screen size of 320px)
 @media (max-width: 480px) {
-   .wrapper {
-      width: 100%;  
-   }
+    .wrapper {
+        width: 100%;
+    }
 
-   header {
-      height: auto;
+    header {
+        height: auto;
+    }
+
+    main {
+        form {
+            padding-top: 80px;
+            height: 75vh;
+        }
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) and (orientation : landscape) {
+   header{
+      height:auto;
    }
    
-   main {
-      form {
-         padding-top: 80px;
-         height: 75vh;
-      }
-   }
 }
