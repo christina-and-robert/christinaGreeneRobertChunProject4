@@ -479,5 +479,8 @@ footer {
   header {
     height: auto;
   }
+  main form {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
