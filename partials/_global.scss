@@ -16,6 +16,7 @@ html {
 body {
    font-size: 2rem;
    text-align: center;
+   font-family: $bodyFont;
 }
 
 .wrapper {
@@ -31,6 +32,4 @@ img {
    overflow: hidden;
 }
 
-main {
-   background: url(../assets/veggieBackground.png) top left/50% repeat;
-}
+

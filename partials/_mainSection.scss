@@ -1,6 +1,7 @@
 main {
+   background: url(../assets/veggieBackground.png) top left/50% repeat;
    .searchParameters {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
       display: flex;
       flex-direction: row;
@@ -12,12 +13,11 @@ main {
          flex-direction: column;
          width: 33.33%;
       }
-      
+      label {
+         padding: 20px 0;
+      }
    }
 }
 
 
 
-label {
-   padding: 20px 0;
-}

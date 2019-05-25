@@ -1,0 +1,15 @@
+.results {
+   h2 {
+
+   }
+   #resultsInformation {
+      display: flex;
+      flex-direction: row;
+      #imageContainer {
+         width: 40%;
+      }
+      #locationInfo {
+         widows: 60%;
+      }
+   }
+}

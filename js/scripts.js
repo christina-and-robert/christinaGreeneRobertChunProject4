@@ -193,16 +193,17 @@ slotApp.init = function () {
       slotApp.currentSelection = slotApp.modArray[randomNumber];
 
       // adding results section to the html page dynamically
-      $('.results').html(`<div>
-         <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
-         </div>
+      $('.results').html(`
+         <div id="resultsInformation">
          <aside id="imageContainer">
          <img src="${slotApp.currentSelection.image_url}" id="restaurantImage" alt="">
          </aside>
          <article>
-         <p id="locationInformation">${slotApp.currentSelection.location.address1}</p>
+         <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
+         <p id="locationInfo">${slotApp.currentSelection.location.address1}</p>
          <p id="rating">${slotApp.currentSelection.rating}</p>
-         </article>`);
+         </article>
+         </div>`);
    })
 }
 
