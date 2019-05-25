@@ -191,19 +191,13 @@ body {
 }
 
 .wrapper {
-  max-width: 1024px;
+  max-width: 950px;
   margin: 0 auto;
-}
-
-.resultsButton {
-  font-size: 5rem;
-  text-align: center;
-  color: #FCD567;
-  font-family: "Londrina Solid", cursive;
 }
 
 header {
   background: #02485D;
+  height: 30vh;
 }
 
 header h1 {
@@ -211,11 +205,15 @@ header h1 {
   font-size: 15rem;
   color: #49F1BD;
   margin: 0;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 main {
   background: url(../assets/veggieBackground.png) top left/50% repeat;
+}
+
+main form {
+  height: 70vh;
 }
 
 main .searchParameters {
@@ -228,7 +226,11 @@ main .searchParameters {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px 0;
+  padding: 40px 0;
+}
+
+main .searchParameters .foodType {
+  padding: 25px 0;
 }
 
 main .searchParameters .cost,
@@ -237,9 +239,9 @@ main .searchParameters .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -250,41 +252,95 @@ main .searchParameters .location {
   width: 33.33%;
 }
 
-main .searchParameters label {
-  padding: 20px 0;
-}
-
-main .foodType div {
+main .searchParameters .foodType div {
   width: 100%;
   font-family: "Sedgwick Ave Display", cursive;
   font-size: 5rem;
   text-align: center;
 }
 
-main .cost div {
+main .searchParameters .cost div {
   width: 50%;
 }
 
-main .location div {
+main .searchParameters .location div {
   width: 35%;
 }
 
-main .foodType img,
-main .cost img,
-main .location img {
+main .searchParameters .foodType img,
+main .searchParameters .cost img,
+main .searchParameters .location img {
   width: 100%;
 }
 
-main input[type=radio] {
+main .searchParameters input[type=radio] {
   position: absolute;
   opacity: 0;
 }
 
-main input[type=radio]:checked + label > img,
-main .foodType input[type=radio]:checked + label {
+main .searchParameters input[type=radio]:checked + label > img,
+main .searchParameters .foodType input[type=radio]:checked + label {
   border: 1px solid #fff;
   -webkit-box-shadow: 0 0 3px 10px #49F1BD;
           box-shadow: 0 0 3px 10px #49F1BD;
+}
+
+main .resultsButtonContainer {
+  padding-top: 15px;
+}
+
+main .resultsButtonContainer .resultsButton {
+  font-size: 5rem;
+  text-align: center;
+  background: #F7A278;
+  border-radius: 10px;
+  color: #032D35;
+  font-family: "Londrina Solid", cursive;
+  padding: 10px 20px;
+  border: 0.16em solid #FCD567;
+}
+
+button {
+  position: relative;
+  background-color: #F7A278;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #3cefff;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+button::before {
+  top: 0;
+}
+
+button::after {
+  bottom: 0;
+}
+
+button:hover::before,
+button:hover::after {
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.results {
+  padding-bottom: 30px;
 }
 
 .results #resultsInformation {
@@ -295,6 +351,8 @@ main .foodType input[type=radio]:checked + label {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
 }
 
 .results #resultsInformation #imageContainer {
@@ -311,7 +369,37 @@ main .foodType input[type=radio]:checked + label {
   border-radius: 20px;
 }
 
-.results #resultsInformation #locationInfo {
-  widows: 60%;
+.results #resultsInformation article {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.results #resultsInformation article h2 {
+  font-family: "Londrina Solid", cursive;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.results #resultsInformation article p {
+  font-size: 3rem;
+  margin: 0;
+}
+
+footer {
+  background: #032D35;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

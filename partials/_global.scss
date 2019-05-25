@@ -1,4 +1,4 @@
-$primaryColor: #02455C;
+$primaryColor: #032D35;
 $accentColorAqua: #49F1BD;
 $accentColorYellow: #FCD567;
 $accentColorPeach: #F7A278;
@@ -24,13 +24,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
-.resultsButton {
-    font-size: 5rem;
-    text-align: center;
-    color: $accentColorYellow;
-    font-family: $headingFont;
-}

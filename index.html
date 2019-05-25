@@ -12,10 +12,11 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="visuallyHidden">Skip to the main content on this page.</a>
     <header>
         <h1>FOOD TIME</h1>
     </header>
-    <main>
+    <main id="mainContent">
         <form class="wrapper">
             <div class="searchParameters">
                 <div class="cost">
@@ -37,23 +38,11 @@
                 <div class="foodType">
                     <div>
                         <input type="radio" id="mexican" name="cuisine" value="1" required>
-                        <label for="mexican">MEXICAN
-                            <!-- <div>
-
-                                <p>MEXICAN</p>
-                            </div> -->
-                            <!-- <img src="./assets/mexicanSign.png" alt="I'm sad" /> -->
-                        </label>
+                        <label for="mexican">MEXICAN</label>
                     </div>
                     <div>
                         <input type="radio" id="korean" name="cuisine" value="2" required>
-                        <label for="korean">KOREAN
-                            <!-- <div>
-                                <p>KOREAN</p>
-                            </div> -->
-                            
-                            <!-- <img src="./assets/koreanSign.png" alt="I'm sad" /> -->
-                        </label>
+                        <label for="korean">KOREAN</label>
                     </div>
                 </div>
                 <div class="location">
@@ -71,20 +60,17 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
-                <div class="instructions">
-                    <!-- <p>Click below to find a restaurant!</p> -->
-                </div>
-                <div class="resultsButtonContainer">
-                    <button class="resultsButton">!Find Me Some Food!</button>
-                </div>
+            <div class="resultsButtonContainer wrapper">
+                <button class="resultsButton" aria-label="Click to find results.">!Find Me Some Food!</button>
             </div>
         </form>
 
-        <section class="results wrapper">
+        <section class="results wrapper" id="resultsSection">
             <!-- dynamically added content here -->
         </section>
     </main>
+
+    <footer>©2019 by Christina & Rob</footer>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>

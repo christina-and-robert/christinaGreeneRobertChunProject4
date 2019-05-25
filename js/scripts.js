@@ -109,6 +109,12 @@ slotApp.init = function () {
       // prevents default function of button when clicked
       e.preventDefault();
 
+      // smooth scrolls to results section
+      $(`html,body`).animate({
+         scrollTop: $(`.results`).offset().top
+      },
+         `slow`);
+
       // collecting values from user input
       const userInputPrice = $(`input[name=price]:checked`).val();
       const userInputCuisine = $(`input[name=cuisine]:checked`).val();
@@ -201,7 +207,7 @@ slotApp.init = function () {
          <article>
          <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
          <p id="locationInfo">${slotApp.currentSelection.location.address1}</p>
-         <p id="rating">${slotApp.currentSelection.rating}</p>
+         <p id="rating">Rating: ${slotApp.currentSelection.rating} of 5</p>
          </article>
          </div>`);
    })
