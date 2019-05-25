@@ -231,6 +231,9 @@ main .searchParameters {
 
 main .searchParameters .foodType {
   padding: 25px 0;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 5rem;
+  text-align: center;
 }
 
 main .searchParameters .cost,
@@ -254,9 +257,6 @@ main .searchParameters .location {
 
 main .searchParameters .foodType div {
   width: 100%;
-  font-family: "Sedgwick Ave Display", cursive;
-  font-size: 5rem;
-  text-align: center;
 }
 
 main .searchParameters .cost div {
@@ -295,7 +295,7 @@ main .resultsButtonContainer .resultsButton {
   font-size: 5rem;
   text-align: center;
   background: #F7A278;
-  border: 0.16em solid #FCD567;
+  border: 8px solid #FCD567;
   border-radius: 10px;
   padding: 10px 20px;
   position: relative;
@@ -331,6 +331,14 @@ main .resultsButtonContainer .resultsButton:hover::before, main .resultsButtonCo
           transform-origin: center left;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+main .resultsButtonContainer .resultsButton:active {
+  background: #FCD567;
+}
+
+main .resultsButtonContainer .resultsButton:focus {
+  border: 8px dashed #032D35;
 }
 
 .results {
@@ -407,5 +415,63 @@ footer {
   color: #FCD567;
   font-family: "Montserrat", sans-serif;
   padding: 5px 0;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 19vw;
+    padding: 25px 0;
+  }
+  main form {
+    height: 61vh;
+  }
+  main .searchParameters .foodType {
+    padding: 0;
+    font-size: 6.5vw;
+  }
+  main .resultsButtonContainer {
+    padding-top: 30px;
+  }
+  main .resultsButtonContainer .resultsButton {
+    font-size: 6.5vw;
+  }
+  .results .resultsInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .results .resultsInformation .imageContainer,
+  .results .resultsInformation article {
+    width: 100%;
+  }
+  .results .resultsInformation article {
+    padding: 20px 0;
+  }
+  .results .resultsInformation h2 {
+    font-size: 6.5vw;
+  }
+  .results .resultsInformation p {
+    font-size: 3.9vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+  header {
+    height: auto;
+  }
+  main form {
+    padding-top: 80px;
+    height: 75vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

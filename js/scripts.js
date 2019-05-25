@@ -21,199 +21,206 @@ slotApp.mexicanMississauga;
 slotApp.modArray = [];
 slotApp.currentSelection = [];
 
+
 // AJAX call for Korean Restaurants in Toronto
 slotApp.koreanToronto = $.ajax({
-   async: true,
-   crossDomain: true,
-   url: slotApp.koreanTorontoURL,
-   method: "GET",
-   headers: {
-      Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
-      UserAgent: "PostmanRuntime/7.13.0",
-      Accept: "*/*",
-      CacheControl: "no-cache",
-      PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
-      cacheControl: "no-cache"
-   }
+    async: true,
+    crossDomain: true,
+    url: slotApp.koreanTorontoURL,
+    method: "GET",
+    headers: {
+        Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
+        UserAgent: "PostmanRuntime/7.13.0",
+        Accept: "*/*",
+        CacheControl: "no-cache",
+        PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
+        cacheControl: "no-cache"
+    }
 });
 
 // AJAX call for Korean Restaurants in Mississauga
 slotApp.koreanMississauga = $.ajax({
-   async: true,
-   crossDomain: true,
-   url: slotApp.koreanMississauagaURL,
-   method: "GET",
-   headers: {
-      Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
-      UserAgent: "PostmanRuntime/7.13.0",
-      Accept: "*/*",
-      CacheControl: "no-cache",
-      PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
-      cacheControl: "no-cache"
-   }
+    async: true,
+    crossDomain: true,
+    url: slotApp.koreanMississauagaURL,
+    method: "GET",
+    headers: {
+        Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
+        UserAgent: "PostmanRuntime/7.13.0",
+        Accept: "*/*",
+        CacheControl: "no-cache",
+        PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
+        cacheControl: "no-cache"
+    }
 });
 
 // AJAX call for Mexican Restaurants in Toronto
 slotApp.mexicanToronto = $.ajax({
-   async: true,
-   crossDomain: true,
-   url: slotApp.mexicanTorontoURL,
-   method: "GET",
-   headers: {
-      Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
-      UserAgent: "PostmanRuntime/7.13.0",
-      Accept: "*/*",
-      CacheControl: "no-cache",
-      PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
-      cacheControl: "no-cache"
-   }
+    async: true,
+    crossDomain: true,
+    url: slotApp.mexicanTorontoURL,
+    method: "GET",
+    headers: {
+        Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
+        UserAgent: "PostmanRuntime/7.13.0",
+        Accept: "*/*",
+        CacheControl: "no-cache",
+        PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
+        cacheControl: "no-cache"
+    }
 });
 
 // AJAX call for Mexican Restaurants in Mississauga
 slotApp.mexicanMississauga = $.ajax({
-   async: true,
-   crossDomain: true,
-   url: slotApp.mexicanMississaugaURL,
-   method: "GET",
-   headers: {
-      Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
-      UserAgent: "PostmanRuntime/7.13.0",
-      Accept: "*/*",
-      CacheControl: "no-cache",
-      PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
-      cacheControl: "no-cache"
-   }
+    async: true,
+    crossDomain: true,
+    url: slotApp.mexicanMississaugaURL,
+    method: "GET",
+    headers: {
+        Authorization: "Bearer aMyI7YRYlTRVSrH0cgC2ZHCbcDtSW9w2J9AmZaryuRpHgD3boyh_Pw9cFvvnw20d_znLBbJGDixK3rbXueOzK8Oh05xT1HBQSlKvuMiRxMbMPEnZjzsRc_-XlybnXHYx",
+        UserAgent: "PostmanRuntime/7.13.0",
+        Accept: "*/*",
+        CacheControl: "no-cache",
+        PostmanToken: "c1030027-5b1f-4caf-969d-84ec64666426,f9c8b243-f557-4cfc-9286-759a818cd6a1",
+        cacheControl: "no-cache"
+    }
 });
 
 // Setting up parameters for if the promise is fulfilled or not
 $.when(slotApp.koreanToronto, slotApp.koreanMississauga, slotApp.mexicanToronto, slotApp.mexicanMississauga)
-   .then((resultOfKoreanToronto, resultOfKoreanMississauga, resultOfMexicanToronto, resultOfMexicanMississauga) => {
-      slotApp.koreanToronto = resultOfKoreanToronto;
-      slotApp.koreanMississauga = resultOfKoreanMississauga;
-      slotApp.mexicanToronto = resultOfMexicanToronto;
-      slotApp.mexicanMississauga = resultOfMexicanMississauga;
-   })
-   .fail((err1, err2, err3, err4) => {
-      alert('Please refresh the page to try again.');
-   });
+    .then((resultOfKoreanToronto, resultOfKoreanMississauga, resultOfMexicanToronto, resultOfMexicanMississauga) => {
+        slotApp.koreanToronto = resultOfKoreanToronto;
+        slotApp.koreanMississauga = resultOfKoreanMississauga;
+        slotApp.mexicanToronto = resultOfMexicanToronto;
+        slotApp.mexicanMississauga = resultOfMexicanMississauga;
+    })
+    .fail((err1, err2, err3, err4) => {
+        alert('Please refresh the page to try again.');
+    });
 
 // a math function to randomly select a value in slotArray
 slotApp.randomGenerator = function (slotArray) {
     return Math.floor(Math.random() * slotArray.length);
 }
 
-// functions we want to happen when .init is called (when the doc is ready)
-slotApp.init = function () {
-   // instructions for what is to happen once the form is submitted
-   $('form').on('submit', function (e) {
-      // prevents default function of button when clicked
-      e.preventDefault();
+slotApp.decisionMaking = function () {
 
-      // smooth scrolls to results section
-      $(`html,body`).animate({
-         scrollTop: $(`.results`).offset().top
-      },
-         `slow`);
+    // collecting values from user input
+    const userInputPrice = $(`input[name=price]:checked`).val();
+    const userInputCuisine = $(`input[name=cuisine]:checked`).val();
+    const userInputCity = $(`input[name=city]:checked`).val();
 
-      // collecting values from user input
-      const userInputPrice = $(`input[name=price]:checked`).val();
-      const userInputCuisine = $(`input[name=cuisine]:checked`).val();
-      const userInputCity = $(`input[name=city]:checked`).val();
+    // clears selection for next click
+    slotApp.modArray.length = 0;
+    /////If statements for each type of search////////////
+    //cheap mexican Toronto
+    if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "1") {
 
-      // setting randomNumber to 0
-      let randomNumber = 0;
-      // clears selection for next click
-      slotApp.modArray.length = 0;
-
-      /////If statements for each type of search////////////
-      //cheap mexican Toronto
-      if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "1") {
-
-         for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
+        for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
             if (slotApp.mexicanToronto[0].businesses[i].price === '$') {
-               slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
+                slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
             }
-         }
-      }
-      //cheap mexican mississauga
-      if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "2") {
-         for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
+        }
+    }
+    //cheap mexican mississauga
+    if (userInputPrice === "1" && userInputCuisine === "1" && userInputCity === "2") {
+        for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
             if (slotApp.mexicanMississauga[0].businesses[i].price === '$') {
-               slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
+                slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
             }
-         }
-      }
-      //cheap korean toronto
-      if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "1") {
-         for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
+        }
+    }
+    //cheap korean toronto
+    if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "1") {
+        for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
             if (slotApp.koreanToronto[0].businesses[i].price === '$') {
-               slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
+                slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
             }
-         }
-      }
-      //cheap korean mississauga
-      if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "2") {
-         for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
+        }
+    }
+    //cheap korean mississauga
+    if (userInputPrice === "1" && userInputCuisine === "2" && userInputCity === "2") {
+        for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
             if (slotApp.koreanMississauga[0].businesses[i].price === '$') {
-               slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
+                slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
             }
-         }
-      }
-      //expensive mexican Toronto
-      if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "1") {
-         for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
+        }
+    }
+    //expensive mexican Toronto
+    if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "1") {
+        for (let i = 0; i < (slotApp.mexicanToronto[0].businesses.length); i++) {
             if (slotApp.mexicanToronto[0].businesses[i].price === '$$') {
-               slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
+                slotApp.modArray.push(slotApp.mexicanToronto[0].businesses[i]);
             }
-         }
-      }
-      //expensive mexican mississauga
-      if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "2") {
-         for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
+        }
+    }
+    //expensive mexican mississauga
+    if (userInputPrice === "2" && userInputCuisine === "1" && userInputCity === "2") {
+        for (let i = 0; i < (slotApp.mexicanMississauga[0].businesses.length); i++) {
             if (slotApp.mexicanMississauga[0].businesses[i].price === '$$') {
-               slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
+                slotApp.modArray.push(slotApp.mexicanMississauga[0].businesses[i]);
             }
-         }
-      }
-      //expensive korean toronto
-      if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "1") {
-         for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
+        }
+    }
+    //expensive korean toronto
+    if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "1") {
+        for (let i = 0; i < (slotApp.koreanToronto[0].businesses.length); i++) {
             if (slotApp.koreanToronto[0].businesses[i].price === '$$') {
-               slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
+                slotApp.modArray.push(slotApp.koreanToronto[0].businesses[i]);
             }
-         }
-      }
-      //expensive korean mississauga
-      if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "2") {
-         for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
+        }
+    }
+    //expensive korean mississauga
+    if (userInputPrice === "2" && userInputCuisine === "2" && userInputCity === "2") {
+        for (let i = 0; i < (slotApp.koreanMississauga[0].businesses.length); i++) {
             if (slotApp.koreanMississauga[0].businesses[i].price === '$$') {
-               slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
+                slotApp.modArray.push(slotApp.koreanMississauga[0].businesses[i]);
             }
-         }
-      }
+        }
+    }
 
-      // runs the randomGenerator function to find a random number in the modArray
-      randomNumber = slotApp.randomGenerator(slotApp.modArray);
+}
 
-      // defining currentSelection to include the 1 random number that returns
-      slotApp.currentSelection = slotApp.modArray[randomNumber];
+slotApp.userDisplay = function(){
+    // adding results section to the html page dynamically
+    $('.results').html(`
+        <div class="resultsInformation"><aside class="imageContainer"><img src="${slotApp.currentSelection.image_url}" id="restaurantImage" alt=""></aside><article><h2 class="restaurantName">${slotApp.currentSelection.name}</h2><p class="locationInfo">${slotApp.currentSelection.location.address1}</p><p class="rating">Rating: ${slotApp.currentSelection.rating} of 5</p></article></div>`
+    );
+}
 
-      // adding results section to the html page dynamically
-      $('.results').html(`
-         <div class="resultsInformation">
-         <aside class="imageContainer">
-         <img src="${slotApp.currentSelection.image_url}" id="restaurantImage" alt="">
-         </aside>
-         <article>
-         <h2 class="restaurantName">${slotApp.currentSelection.name}</h2>
-         <p class="locationInfo">${slotApp.currentSelection.location.address1}</p>
-         <p class="rating">Rating: ${slotApp.currentSelection.rating} of 5</p>
-         </article>
-         </div>`);
-   })
+
+// functions we want to happen when .init is called (when doc is ready)
+slotApp.init = function () {
+    // instructions for what is to happen once the form is submitted
+    $('form').on('submit', function (e) {
+
+        // prevents default function of button when clicked
+        e.preventDefault();
+
+
+        // setting randomNumber to 0
+        let randomNumber = 0;
+        
+        
+        // smooth scrolls to results section
+        $(`html,body`).animate({
+            scrollTop: $(`.results`).offset().top
+        },
+            `slow`);
+
+        slotApp.decisionMaking();
+
+        // runs the randomGenerator function to find a random number in the modArray
+        randomNumber = slotApp.randomGenerator(slotApp.modArray);
+
+        // defining currentSelection to include the 1 random number that returns
+        slotApp.currentSelection = slotApp.modArray[randomNumber];
+
+        slotApp.userDisplay();
+    })
 }
 
 // all of the functions that will run when the document is ready
 $(function () {
-   slotApp.init();
+    slotApp.init();
 });

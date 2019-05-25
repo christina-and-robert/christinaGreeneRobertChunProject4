@@ -14,6 +14,9 @@ main {
 
         .foodType {
             padding: 25px 0;
+            font-family: $cityFont;
+            font-size:5rem;
+            text-align:center;
         }
 
         .cost,
@@ -28,9 +31,6 @@ main {
 
         .foodType div {
             width: 100%;
-            font-family: $cityFont;
-            font-size:5rem;
-            text-align:center;
         }
 
         .cost div {
@@ -58,6 +58,7 @@ main {
             box-shadow: 0 0 3px 8px $accentColorPeach;
         }
     }
+
     .resultsButtonContainer {
         padding-top: 15px;
     
@@ -67,10 +68,11 @@ main {
             font-size: 5rem;
             text-align: center;
             background: $accentColorPeach;
-            border: 0.16em solid $accentColorYellow;
+            border: 8px solid $accentColorYellow;
             border-radius: 10px;
             padding: 10px 20px;
             position: relative;
+
             &::before,
             &::after {
                 content: '';
@@ -83,16 +85,27 @@ main {
                 transform: scaleX(0);
                 transition: transform 0.5s ease;
             }
+
             &::before {
                 top: 0;
             }
+
             &::after {
                 bottom: 0;
             }
+
             &:hover::before,
             &:hover::after {
                 transform-origin: center left;
                 transform: scaleX(1);
+            }
+            
+            &:active {
+                background: $accentColorYellow;
+            }
+
+            &:focus {
+                border: 8px dashed $primaryColor;
             }
         }
     }

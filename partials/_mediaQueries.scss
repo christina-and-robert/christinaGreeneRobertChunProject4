@@ -1,0 +1,79 @@
+@media (max-width: 1000px) {
+   .wrapper {
+      width: 80%;
+   }
+}
+
+// Portrait tablet, small desktops (940px), landscape phone to portrait tablet (768px)
+@media (max-width: 768px) {
+   header {
+
+      h1 {
+         font-size: 19vw;
+         padding: 25px 0;
+      }
+   }
+   main {
+
+      form {
+         height: 61vh;
+      }
+      
+      .searchParameters {
+         
+         .foodType {
+            padding: 0;
+            font-size: 6.5vw;
+         }
+      }
+
+      .resultsButtonContainer {
+         padding-top: 30px;
+         .resultsButton {
+            font-size: 6.5vw;
+         }
+      }
+   }
+
+   .results {
+
+      .resultsInformation {
+         flex-direction: column-reverse;
+
+         .imageContainer,
+         article {
+            width: 100%;
+         }
+
+         article {
+            padding: 20px 0;
+         }
+
+         h2 {
+            font-size: 6.5vw;
+         }
+
+         p {
+            font-size: 3.9vw;
+         }
+      }
+   }
+}
+
+// Landscape phones and down (including smallest screen size of 320px)
+@media (max-width: 480px) {
+   .wrapper {
+      width: 100%;  
+   }
+
+   header {
+      height: auto;
+   }
+   
+   main {
+      form {
+         padding-top: 80px;
+         height: 75vh;
+      }
+   }
+}
