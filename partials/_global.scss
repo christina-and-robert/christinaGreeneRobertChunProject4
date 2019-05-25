@@ -1,8 +1,35 @@
-$primaryColor: #49F1BD;
-$secondaryColor: #02455C;
-$tertiaryColor: #044E65;
-$quaternaryColor: #FCD567;
-$quinaryColor: #F7A278;
+$primaryColor: #02455C;
+$accentColorAqua: #49F1BD;
+$accentColorYellow: #FCD567;
+$accentColorPeach: #F7A278;
+$primaryBackgroundColor: #044E65;
+
+
+$headingFont: 'Londrina Solid', cursive;
+$bodyFont: 'Montserrat', sans-serif;
+
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 2rem;
+   text-align: center;
+}
+
+.wrapper {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+   width: 100%;
+   display: block;
+   object-fit: cover;
+   overflow: hidden;
+}
 
 main {
    background: url(../assets/veggieBackground.png) top left/50% repeat;

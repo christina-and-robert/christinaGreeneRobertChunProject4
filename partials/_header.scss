@@ -1,3 +1,10 @@
 header {
    background: #02485D;
+   h1 {
+      font-family: $headingFont;
+      font-size: 15rem;
+      color: $accentColorAqua;
+      margin: 0;
+      padding: 40px 0;
+   }
 }

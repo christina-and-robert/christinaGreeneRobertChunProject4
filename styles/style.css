@@ -179,11 +179,73 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
 main {
   background: url(../assets/veggieBackground.png) top left/50% repeat;
 }
 
 header {
   background: #02485D;
+}
+
+header h1 {
+  font-family: "Londrina Solid", cursive;
+  font-size: 15rem;
+  color: #49F1BD;
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .searchParameters {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0;
+}
+
+main .searchParameters .cost,
+main .searchParameters .foodType,
+main .searchParameters .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.33%;
+}
+
+label {
+  padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900|Montserrat&display=swap" rel="stylesheet">
     <!-- <link rel="icon" href=""> REMEMBER TO PUT FAVICON -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <h1>THIS IS OUR TITLE</h1>
+        <h1>FOOD TIME</h1>
     </header>
     <main>
-        <form>
+        <form class="wrapper">
             <div class="searchParameters">
                 <div class="cost">
                     <label for="cheap">$</label>
@@ -35,7 +36,7 @@
                     <input type="radio" id="mississauga" name="city" value="2" required>
                 </div>
             </div>
-            <div>
+            <div class="wrapper">
                 <div class="instructions">
                     <p>Click below to find a restaurant!</p>
                 </div>
@@ -45,7 +46,7 @@
             </div>
         </form>
 
-        <section class="results">
+        <section class="results wrapper">
             <!-- dynamically added content here -->
         </section>
     </main>
