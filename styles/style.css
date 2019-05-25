@@ -343,7 +343,7 @@ button:hover::after {
   padding-bottom: 30px;
 }
 
-.results #resultsInformation {
+.results .resultsInformation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,11 +355,11 @@ button:hover::after {
   border-radius: 20px;
 }
 
-.results #resultsInformation #imageContainer {
+.results .resultsInformation .imageContainer {
   width: 40%;
 }
 
-.results #resultsInformation img {
+.results .resultsInformation img {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -369,7 +369,7 @@ button:hover::after {
   border-radius: 20px;
 }
 
-.results #resultsInformation article {
+.results .resultsInformation article {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,13 +386,24 @@ button:hover::after {
           justify-content: center;
 }
 
-.results #resultsInformation article h2 {
+.results .resultsInformation article h2 {
   font-family: "Londrina Solid", cursive;
   font-size: 5rem;
   margin: 0;
+  border-bottom: 5px dashed #F7A278;
+  padding-bottom: 5px;
 }
 
-.results #resultsInformation article p {
+.results .resultsInformation article .locationInfo {
+  border-bottom: 3px dashed #F7A278;
+  padding: 10px 0;
+}
+
+.results .resultsInformation article .rating {
+  padding-top: 5px;
+}
+
+.results .resultsInformation article p {
   font-size: 3rem;
   margin: 0;
 }

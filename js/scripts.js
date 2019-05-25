@@ -200,14 +200,14 @@ slotApp.init = function () {
 
       // adding results section to the html page dynamically
       $('.results').html(`
-         <div id="resultsInformation">
-         <aside id="imageContainer">
+         <div class="resultsInformation">
+         <aside class="imageContainer">
          <img src="${slotApp.currentSelection.image_url}" id="restaurantImage" alt="">
          </aside>
          <article>
-         <h2 id="restaurantName">${slotApp.currentSelection.name}</h2>
-         <p id="locationInfo">${slotApp.currentSelection.location.address1}</p>
-         <p id="rating">Rating: ${slotApp.currentSelection.rating} of 5</p>
+         <h2 class="restaurantName">${slotApp.currentSelection.name}</h2>
+         <p class="locationInfo">${slotApp.currentSelection.location.address1}</p>
+         <p class="rating">Rating: ${slotApp.currentSelection.rating} of 5</p>
          </article>
          </div>`);
    })
