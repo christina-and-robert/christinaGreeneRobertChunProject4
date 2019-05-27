@@ -13,19 +13,19 @@ main {
         padding: 40px 0;
 
         .foodType {
-            padding: 25px 0;
             font-family: $cityFont;
             font-size:5rem;
             text-align:center;
+            padding: 25px 0;
         }
 
         .cost,
         .foodType,
         .location {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            flex-direction: column;
             width: 33.33%;
         }
 
@@ -63,9 +63,9 @@ main {
         padding-top: 15px;
     
         .resultsButton {
+            font-size: 5rem;
             font-family: $headingFont;
             color: $primaryColor;
-            font-size: 5rem;
             text-align: center;
             background: $accentColorPeach;
             border: 8px solid $accentColorYellow;

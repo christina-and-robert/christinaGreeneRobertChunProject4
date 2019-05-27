@@ -1,12 +1,16 @@
+// Adjusting wrapper width //////////////////////////////
 @media (max-width: 1000px) {
+
     .wrapper {
         width: 80%;
     }
 }
 
-// Portrait tablet, small desktops (940px), landscape phone to portrait tablet (768px)
+// Portrait tablet, small desktops (940px), landscape phone to portrait tablet (768px) //////////
 @media (max-width: 768px) {
+
     header {
+        height: auto;
 
         h1 {
             font-size: 19vw;
@@ -62,17 +66,15 @@
     }
 }
 
-// Landscape phones and down (including smallest screen size of 320px)
+// Landscape phones and down (including smallest screen size of 320px) //////////
 @media (max-width: 480px) {
+
     .wrapper {
         width: 100%;
     }
 
-    header {
-        height: auto;
-    }
-
     main {
+        
         form {
             padding-top: 80px;
             height: 75vh;
@@ -80,15 +82,18 @@
     }
 }
 
+// specific settings for landscape orientation only
 @media only screen and (min-device-width : 320px) and (max-device-width : 1200px) and (orientation : landscape) {
-   header{
-      height:auto;
-   }
 
-   main {
-      form {
-         height: 100vh;
-      }
-   }
-   
+    header{
+        height: auto;
+    }
+
+    main {
+
+        form {
+            height: 100vh;
+        }
+    }
+
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Food Time</title>
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900|Montserrat|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
@@ -13,28 +13,29 @@
 
 <body>
     <a href="#mainContent" class="visuallyHidden">Skip to the main content on this page.</a>
+
     <header>
         <h1>FOOD TIME</h1>
     </header>
+
     <main id="mainContent">
+
         <form class="wrapper">
             <div class="searchParameters">
                 <div class="cost">
                     <div>
                         <input type="radio" id="cheap" name="price" value="1" required >
                         <label for="cheap" tabindex="0">
-                            <img src="./assets/singleDollarSign.png" alt="I'm sad" />
+                            <img src="./assets/singleDollarSign.png" alt="A single dollar sign to indicate a cheaper price point."/>
                         </label>
                     </div>
                     <div>
                         <input type="radio" id="expensive" name="price" value="2" required>
                         <label for="expensive"> 
-                            <img src="./assets/doubleDollarSign.png" alt="I'm sad" />
+                            <img src="./assets/doubleDollarSign.png" alt="Two dollar signs to indicate a more expensive price point."/>
                         </label>
                     </div>
-
                 </div>
-
                 <div class="foodType">
                     <div>
                         <input type="radio" id="mexican" name="cuisine" value="1" required>
@@ -46,16 +47,16 @@
                     </div>
                 </div>
                 <div class="location">
-                    <div class = >
+                    <div>
                         <input type="radio" id="toronto" name="city" value="1" required>
                         <label for="toronto">
-                            <img src="./assets/torontoIcon.png" alt="I'm sad" />
+                            <img src="./assets/torontoIcon.png" alt="An icon of the CN Tower to indicate the Toronto option."/>
                         </label>
                     </div>
                     <div>
                         <input type="radio" id="mississauga" name="city" value="2" required>
                         <label for="mississauga">
-                            <img src="./assets/mississaugaIcon.png" alt="I'm sad" />
+                            <img src="./assets/mississaugaIcon.png" alt="An icon of a skyline to indicate the Mississauga option."/>
                         </label>
                     </div>
                 </div>
@@ -75,6 +76,7 @@
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

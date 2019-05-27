@@ -3,15 +3,12 @@ $primaryColor: #032D35;
 $accentColorAqua: #49F1BD;
 $accentColorYellow: #FCD567;
 $accentColorPeach: #F7A278;
-$primaryBackgroundColor: #044E65;
+$primaryBackgroundColor: #02485D;
 
 //Common Fonts
-$headingFont: 'Londrina Solid',
-cursive;
-$bodyFont: 'Montserrat',
-sans-serif;
-$cityFont: 'Sedgwick Ave Display',
-cursive;
+$headingFont: 'Londrina Solid', cursive;
+$bodyFont: 'Montserrat', sans-serif;
+$cityFont: 'Sedgwick Ave Display', cursive;
 
 html {
     font-size: 62.5%;
@@ -19,9 +16,9 @@ html {
 }
 
 body {
+    font-family: $bodyFont;
     font-size: 2rem;
     text-align: center;
-    font-family: $bodyFont;
 }
 
 .wrapper {
